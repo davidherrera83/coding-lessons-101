@@ -9,5 +9,8 @@ class Herokuapp:
 
          return self
     
-    def click_on_example(self):
+    def click_on_example(self, example: str):
+         self.py.get(f'{example}').click()
+
+    def login_process(self):
          pass
